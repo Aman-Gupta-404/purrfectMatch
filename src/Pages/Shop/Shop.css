@@ -1,0 +1,220 @@
+.shop {
+    max-width: 100vw;
+}
+
+.shop__nav--section {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--black);
+}
+
+.shop__controls {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.shop__filters {
+    width: 16%;
+    height: 100%;
+}
+
+.shop__search {
+    width: 68%;
+    height: 70%;
+}
+
+.shop__search--btn {
+    width: 16%;
+    height: 100%;
+}
+
+.shop__search--container {
+    width: 90%;
+    height: 98%;
+    position: relative;
+}
+
+.shop__search--container > input {
+    width: 100%;
+    height: 100%;
+    /* cursor: pointer; */
+    font-size: 1.8rem;
+    padding-left: 15px;
+    padding-right: 60px;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    outline: none;
+}
+
+.shop_search--tools {
+    height: 90%;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop_search_vl {
+    width: 1.09px;
+    height: 45%;
+    margin: auto 5px;
+    background-color: var(--black3);
+    border: none;
+}
+
+.shop_search--searchIcon {
+    font-size: 50px;
+    cursor: pointer;
+    /* position: absolute; */
+    right: 10px;
+    color: var(--black3);
+}
+
+.shop_search--clearIcon {
+    width: 50px;
+    cursor: pointer;
+    /* position: absolute; */
+    right: 35px;
+    color: var(--black3);
+}
+
+/* card shop section */
+.shop__products {
+    width: 80%;
+    min-height: 70vh;
+    margin: 50px auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.noItemsError {
+    height: 70%;
+    color: rgb(48, 48, 48);
+    font-size: 2.2rem;
+    grid-column: span 3;
+    display: flex;
+    letter-spacing: 0.2 rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* filters dialog box */
+.filters__dialog--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters__heading {
+    font-size: 2.5rem;
+}
+
+.filters__closeIcon {
+    color: black;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.filters__content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters__left {
+    width: 30%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: rgb(226, 226, 226);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.filters__right {
+    width: 60%;
+    height: 100%;
+    background-color: red;
+    min-height: 300px;
+}
+
+.filters__text {
+    font-size: 2rem;
+    color: var(--black3);
+}
+
+.filters__left--price {
+    width: 100%;
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+.filters__left--cat {
+    width: 100%;
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+.filters__active {
+    background-color: rgb(247, 247, 247) !important;
+}
+
+.filters__right--cont {
+    width: 100%;
+    min-height: inherit;
+    padding-left: 2rem;
+    background-color: rgb(247, 247, 247);
+}
+
+.btn-ts-filter {
+    /* width: 20rem; */
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.2s all ease;
+  /* the animation ripple animation */
+  background-position: center;
+  transition: background 0.2s;
+}
+
+.btn-ts-filter:hover {
+    background-color: var(--black2);
+    color: var(--white);
+  
+    /* animation */
+    background-image: radial-gradient(circle, transparent 1%, var(--white2));
+    background-position: center;
+    background-size: 15000%;
+  } 
+
+/* media queires */
+@media only screen and (max-width: 800px) {
+    .shop__products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .shop__products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap');
+
+:root {
+  --white: #ebebeb;
+  --white2: #adadad;
+  --black: #1f1c1c;
+  --black2: #252222;
+  --black3: #444444;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* 1rem = 10px [default] */
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  padding: 16px 32px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  transition: 0.2s all ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn:hover {
+  background-color: var(--white);
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  color: var(--black);
+}
+
+.btn-ts-sm {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  color: var(--black);
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  transition: 0.2s all ease;
+  /* the animation ripple animation */
+  background-position: center;
+  transition: background 0.2s;
+}
+
+.btn-ts-sm:hover {
+  background-color: var(--black2);
+  color: var(--white);
+
+  /* animation */
+  background-image: radial-gradient(circle, transparent 1%, var(--white2));
+  background-position: center;
+  background-size: 15000%;
+}
+
+.btn-ts-sm:active {
+  transition: background 0s;
+  background-color: var(--black2);
+  background-size: 100%;
+}
+
+.div_center{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
