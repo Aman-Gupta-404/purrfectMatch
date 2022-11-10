@@ -10,6 +10,7 @@ function Navbar() {
     const cartProduct = useSelector((state) => state.productDeets)
 
     const [cartNumber, setCartNumber] = useState(0)
+    const [navOpen, setNavOpen] = useState(false)
     const [y, setY] = useState(window.scrollY);
 
     const handleNavigation = useCallback(
@@ -48,6 +49,13 @@ function Navbar() {
         } else return null
     } 
 
+    const toggleNav = (e) => {
+        e.preventDefault();
+        setNavOpen((oldState) => {
+            return !oldState;
+        });
+    }
+
   return (
     <div className='navbar' id={y>5? "addNavBG_color": ""}>
         <div className="navbar__logo">
@@ -56,13 +64,20 @@ function Navbar() {
                 <h1 className="navbar__logo--text">Purff</h1>
             </a>
         </div>
-        <div className="navbar__options">
+        <div className="navbar__options" id={navOpen? "navOpen" : ""}>
             <ul className="navbar__items">
                 <li className="navbar__item"><Link to='/' className='navbar__item--link'>Home</Link></li>
                 <li className="navbar__item"><Link to='/shop' className='navbar__item--link'>Shop</Link></li>
                 <li className="navbar__item"><Link to='/about' className='navbar__item--link'>About</Link></li>
                 <li className="navbar__item"><Link to='/cart' className='navbar__item--link'>Cart {cartNumebrDis()}</Link></li>
             </ul>
+        </div>
+        <div className="burger">
+            <div className="nav_burger" onClick={toggleNav}>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+            </div>
         </div>
     </div>
   )

@@ -6,12 +6,6 @@ const initialState = {
     productDeets: []
 }
 
-/* 
-    {
-        productId: null,
-        quantity: null
-    }
-*/
 
 export const cartSlice = createSlice({
   name: 'counter',
