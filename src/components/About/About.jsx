@@ -10,7 +10,7 @@ function About() {
         <div className="about__para">
             <div className="about__para-text">
                 <p className="about__text">
-                    No matter what people say, cats are really adorable, we are a group of people who love cats and want to something to the cats of our planets, hence we created this website to provide the cat owners with all thir catly requirements.
+                    No matter what people say, cats are really adorable, we are a group of people who love cats and want to do something to the cats of our planets, hence we created this website to provide the cat owners with all thir catly requirements.
                 </p>
                 <br/>
                 <p className="about__text">
@@ -23,7 +23,7 @@ function About() {
         </div>
         <br/><br/>
         <h1 className="about__heading">About the website</h1>
-        <div className="about__para">
+        <div className="about__para" id='reverse'>
             <div className="about__para-image2">
                 <img src={about2} alt="" className='about__image'/>
             </div>

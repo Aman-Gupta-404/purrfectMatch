@@ -71,3 +71,27 @@
     text-align: right;
     z-index: 1;
 }
+
+@media only screen and (max-width: 670px) {
+    .about__para {
+        flex-direction: column-reverse;
+    }
+    .about__para-text {
+        width: 80%;
+    }
+    .about__text {
+        text-align: center;
+    }
+    .about__image {
+        width: 90%;
+    }
+    #reverse {
+        flex-direction: column;
+    }
+    .about__para-text {
+        width: 90%;
+    }
+    .about__text--web {
+        text-align: center;
+    }
+}
