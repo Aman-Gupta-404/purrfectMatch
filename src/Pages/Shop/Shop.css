@@ -140,6 +140,9 @@
     align-items: flex-start;
     justify-content: start;
     background-color: rgb(226, 226, 226);
+    border-top: 0.8px solid rgb(226, 226, 226);
+    border-bottom: 0.8px solid rgb(226, 226, 226);
+    border-left: 0.8px solid rgb(226, 226, 226);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -169,6 +172,7 @@
 
 .filters__active {
     background-color: rgb(247, 247, 247) !important;
+    border-left: 3px solid var(--black);
 }
 
 .filters__right--cont {
@@ -176,6 +180,9 @@
     min-height: inherit;
     padding-left: 2rem;
     background-color: rgb(247, 247, 247);
+    border-top: 0.8px solid rgb(226, 226, 226);
+    border-bottom: 0.8px solid rgb(226, 226, 226);
+    border-right: 0.8px solid rgb(226, 226, 226);
 }
 
 .btn-ts-filter {

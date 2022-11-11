@@ -26,8 +26,9 @@
 }
 
 .navbar__logo--link {
-    min-width: 50%;
+    /* min-width: 50%; */
     display: flex;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
     text-decoration: none;
@@ -40,6 +41,7 @@
 
 .navbar__logo--text {
     font-size: 3.2rem;
+    text-decoration: none;
     font-family: 'Noto Serif', serif;
     color: var(--white);
     cursor: pointer;

@@ -59,10 +59,10 @@ function Navbar() {
   return (
     <div className='navbar' id={y>5? "addNavBG_color": ""}>
         <div className="navbar__logo">
-            <a href="" clLinkssName="navbar__logo--link">
+            <Link to="/" className="navbar__logo--link">
                 <img src={pawImage} alt="paw logo" className="navbar__logo--image" />
                 <h1 className="navbar__logo--text">Purff</h1>
-            </a>
+            </Link>
         </div>
         <div className="navbar__options" id={navOpen? "navOpen" : ""}>
             <ul className="navbar__items">
