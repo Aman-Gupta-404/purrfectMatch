@@ -59,7 +59,7 @@ function Navbar() {
   return (
     <div className='navbar' id={y>5? "addNavBG_color": ""}>
         <div className="navbar__logo">
-            <a href="#" className="navbar__logo--link">
+            <a href="" clLinkssName="navbar__logo--link">
                 <img src={pawImage} alt="paw logo" className="navbar__logo--image" />
                 <h1 className="navbar__logo--text">Purff</h1>
             </a>
